@@ -32,3 +32,26 @@ body {
   font-family: "Caveat", cursive;
   font-size: 3.6rem;
 }
+
+.ketupat {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  --gap-kotak: 0.3rem;
+  column-gap: var(--gap-kotak);
+  row-gap: var(--gap-kotak);
+
+  --size-ketupat: 12rem;
+  width: var(--size-ketupat);
+  height: var(--size-ketupat);
+
+  transform: rotateZ(45deg);
+}
+
+.ketupat .kotak {
+  background-color: forestgreen;
+}
+
+.ketupat .kotak:nth-child(even) {
+  background-color: yellowgreen;
+}
